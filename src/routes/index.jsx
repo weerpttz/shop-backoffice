@@ -25,7 +25,7 @@ const Routes = () => {
       element: <ProtectedRoute />, // Wrap the component in ProtectedRoute
       children: [
         {
-          path: "/backoffice/home",
+          path: "/home",
           element: <div></div>,
         },
         {
@@ -43,7 +43,7 @@ const Routes = () => {
   // Define routes accessible only to non-authenticated users
   const routesForNotAuthenticatedOnly = [
     {
-      path: "/backoffice/login",
+      path: "/login",
       element: <Login />,
     },
   ];
