@@ -43,7 +43,7 @@ const Login = () => {
             <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                 <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
                 <h3 className="font-medium text-black dark:text-white">
-                    Sign In Form
+                    Sign In Admin BIT SHOP
                 </h3>
                 </div>
                 <form action="#">
@@ -72,7 +72,7 @@ const Login = () => {
                     />
                     </div>
 
-                    <div className="mt-5 mb-5.5 flex items-center justify-between">
+                    {/* <div className="mt-5 mb-5.5 flex items-center justify-between">
                     <label htmlFor="formCheckbox" className="flex cursor-pointer">
                         <div className="relative pt-0.5">
                         <input
@@ -102,7 +102,7 @@ const Login = () => {
                         </div>
                         <p>Remember me</p>
                     </label>
-                    </div>
+                    </div> */}
 
                     <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90" onClick={handleLogin}>
                     Sign In
