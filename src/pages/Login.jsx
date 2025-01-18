@@ -100,9 +100,9 @@ const Login = () => {
                     <p>Remember me</p>
                   </label>
 
-                  <Link to="#" className="text-sm text-primary hover:underline">
+                  {/* <Link to="#" className="text-sm text-primary hover:underline">
                     Forget password?
-                  </Link>
+                  </Link> */}
                 </div>
 
                 <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90" onClick={handleLogin}>
