@@ -1,18 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { useEffect, useState } from 'react';
 import { useAuth } from "../provider/AuthProvider";
 import { ProtectedRoute } from "./ProtectedRoute";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
-import Loader from "../common/Loader";
 
 const Routes = () => {
   const { token } = useAuth();
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
 
   // Define public routes accessible to all users
   const routesForPublic = [
@@ -64,7 +57,7 @@ const Routes = () => {
   ]);
 
   // Provide the router configuration using RouterProvider
-  return loading? (<Loader />) : (<RouterProvider router={router} />);
+  return <RouterProvider router={router} />;
 };
 
 export default Routes;
