@@ -46,7 +46,6 @@ const Login = () => {
                     Sign In Admin BIT SHOP
                 </h3>
                 </div>
-                <form action="/home">
                 <div className="p-6.5">
                     <div className="mb-4.5">
                     <label className="mb-2.5 block text-black dark:text-white">
@@ -78,7 +77,6 @@ const Login = () => {
                     Sign In
                     </button>
                 </div>
-                </form>
             </div>
         </div>
         
