@@ -51,7 +51,6 @@ const Login = () => {
                 }} value={password} />
             <div style={{color: "white"}}>{error}</div>
             <div className="flex justify-between my-8 mx-auto">
-                <div className="bg-slate-900 py-2.5 px-5 text-2xl rounded cursor-pointer hover:opacity-80" onClick={handleRegister}>Register</div>
                 <div className="bg-slate-900 py-2.5 px-5 text-2xl rounded cursor-pointer hover:opacity-80" onClick={handleLogin}>Login</div>
             </div>
         </div>
